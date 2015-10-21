@@ -7,33 +7,32 @@
 #include<string>
 using namespace std;
 
-void question(string question, string answer){
-	 while (true)
-	  {
-	    string input;
-	    cout << question;
-	    getline(cin, input);
-
-	    if (input == answer){
-	    	cout << "Correct!" << endl;
-	    	cout << endl;
-	    	break;
-	    }
-	    else{
-	    cout << "Incorrect!" << endl;
-	    cout << endl;
-	    break;
-	    }
-	  } // while
+bool question(string question, string answer){
+	string input;
+	cout << question;
+	getline(cin, input);
+	
+	if (input == answer) {
+		cout << "Correct!" << endl;
+		cout << endl;
+		return true;
+	} else {
+		cout << "Incorrect!" << endl;
+		cout << endl;
+		return false;
+	}
 }
 
 int main() {
-
+	int correct = 0;
+	
 	cout << "Programmer: Dhanush Patel" << endl;
 	cout << "Description: This program gives a correct/incorrect output based on user response to 3 questions." << endl;
     cout << endl;
 
-    question("1. What company made the iPhone? ","Apple");
-    question("2. Which company makes the Android OS? ","Google");
-    question("3. What year was the Model X released? ","2015");
+    if (question("1. What company made the iPhone? ","Apple")) correct++;
+    if (question("2. Which company makes the Android OS? ","Google")) correct++;
+    if (question("3. What year was the Model X released? ","2015")) correct++;
+	
+	cout << "That's " << correct << " correct out of 3 questions asked." << endl;
 }
