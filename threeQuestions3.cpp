@@ -1,4 +1,4 @@
-// Lab 8
+// Lab 9
 // Programmer: Dhanush Patel
 // Editor(s) used: Eclipse
 // Compiler(s) used: Eclipse
@@ -28,7 +28,7 @@ int main() {
 	
 	cout << "Programmer: Dhanush Patel" << endl;
 	cout << "Description: This program gives a correct/incorrect output based on user response to 3 questions." << endl;
-    cout << endl;
+        cout << endl;
 
     if (question("1. What company made the iPhone? ","Apple")) correct++;
     if (question("2. Which company makes the Android OS? ","Google")) correct++;
