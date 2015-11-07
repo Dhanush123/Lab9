@@ -12,9 +12,9 @@ int main() {
 	cout << "Description: This program calculates when you can be a billionaire." << endl;
     cout << endl;
 	
-	final int thousandaireCentsAmount = 1000 * 100;
-	final int millionaireCentsAmount  = 1000000 * 100;
-	final int billionaireCentsAmount  = 1000000000 * 100;
+	const int thousandaireCentsAmount = 1000 * 100;
+	const int millionaireCentsAmount  = 1000000 * 100;
+	const int billionaireCentsAmount  = 1000000000 * 100;
 	
 	bool hasThousandaireCalcs = false;
 	bool hasMillionaireCalcs = false;
